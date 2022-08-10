@@ -1,0 +1,16 @@
+h2{
+    color: teal
+}
+$body-color: red;
+
+body {
+  color: $body-color;
+}
+
+body {
+    background-color: red;
+    div {
+        color: #000000;
+    }
+}
+

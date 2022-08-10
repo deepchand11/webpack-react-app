@@ -1,0 +1,17 @@
+$body-color: red;
+
+body {
+  color: $body-color;
+}
+
+body {
+    background-color: white;
+    div {
+        color: #000000;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+  }
