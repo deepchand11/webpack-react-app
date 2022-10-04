@@ -1,6 +1,7 @@
 // container/config/webpack.common.js
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const webpack = require('webpack');
 
 module.exports = {
     module: {
@@ -87,7 +88,8 @@ module.exports = {
             // both options are optional
             filename: "[name].css",
             chunkFilename: "[id].css",
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin()
     ],
     // optimization: {
     //     runtimeChunk: 'single',

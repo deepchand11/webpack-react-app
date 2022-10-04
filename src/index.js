@@ -4,3 +4,5 @@ import App from "./App"
 import './style.scss'
 
 ReactDom.render(<App />, document.getElementById('app'))
+
+module.hot.accept();
